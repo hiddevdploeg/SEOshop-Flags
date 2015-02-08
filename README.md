@@ -7,6 +7,7 @@ All flags are available in 16x12 and 32x24, including a .sketch file with one sh
 # Available for now
 For now it's only Europe but will be more soon.
 ## Europe
+- Andorra
 - Albania
 - Abkhazia
 - Armenia
@@ -58,11 +59,6 @@ For now it's only Europe but will be more soon.
 - Slovenia
 - Bulgaria
 - European Union
-
-Still to do:
-
-## Europe
-- Andorra
 - Cyprus
 - Aland Island(Finland)
 - Mount Athos
@@ -73,10 +69,15 @@ Still to do:
 - Chechnya(Russia)
 - Negorno-Karabakh(Russia)
 - South Ossetia(Russia)
-- Turkish Republic of Northern Cyprus
+- Turkish Republic of Northern Cyprus\
 - Gibraltar
 - Isle of man (UK)
 - Jersey (UK)
 - Wales
 - Sealand
 - San Marino
+
+
+
+
+
