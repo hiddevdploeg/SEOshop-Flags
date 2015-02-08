@@ -4,8 +4,9 @@ An opensource flag set made possible by the SEOshop Design team.
 All flags are available in 16x12 and 32x24, including a .sketch file with one shared layer style to give them all the same outline.
 
 
-# Available for now
-For now it's only Europe but will be more soon.
+# Currently available:
+Will be updated on a regular base until all flags are here.
+
 ## Europe
 - Andorra
 - Albania
