@@ -14,6 +14,7 @@ let data: [[String:String]] = [
         "Code": "AF",
         "Name": "Afghanistan"
     ],
+    
     [
         "Code": "AX",
         "Name": "Åland Islands"

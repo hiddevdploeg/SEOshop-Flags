@@ -34,9 +34,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.countryImage.image = UIImage(named: data[row]["Code"]!)
         cell.countryName.text = data[row]["Name"]!
         
-        if cell.countryImage.image?.hashValue == nil {
-            cell.countryName.textColor = red
-        }
         
         return cell
     }

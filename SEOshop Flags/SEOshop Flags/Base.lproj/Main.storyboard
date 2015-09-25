@@ -33,7 +33,7 @@
                                         <rect key="frame" x="0.0" y="28" width="600" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="grW-nZ-Iqi" id="wbz-uH-Mwp">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="59.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="59"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NL" translatesAutoresizingMaskIntoConstraints="NO" id="dnR-XT-Ck1">
@@ -84,7 +84,15 @@
                             <constraint firstItem="luG-Mw-ysH" firstAttribute="top" secondItem="7iZ-3B-54T" secondAttribute="bottom" id="iue-59-BoT"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="SEOshop Flags" id="C57-9I-UnE"/>
+                    <navigationItem key="navigationItem" title="SEOshop Flags" id="C57-9I-UnE">
+                        <barButtonItem key="rightBarButtonItem" title="Test" id="jBq-i3-cYy">
+                            <connections>
+                                <segue destination="CPJ-sq-sEH" kind="popoverPresentation" popoverAnchorBarButtonItem="jBq-i3-cYy" id="Zbi-gY-COw">
+                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                </segue>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="searchDisplayController" destination="nhI-2M-IbR" id="9xR-cO-J0L"/>
                         <outlet property="tableView" destination="luG-Mw-ysH" id="sPh-8L-trV"/>
@@ -110,6 +118,52 @@
                 </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="1117" y="429"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="utu-2M-r71">
+            <objects>
+                <viewController id="CPJ-sq-sEH" customClass="WebViewController" customModule="SEOshop_Flags" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UwN-9N-ZAl"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ij8-lx-F3c"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dMU-z7-TCo">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7mu-D2-Lyk">
+                                <rect key="frame" x="24" y="44" width="552" height="532"/>
+                                <subviews>
+                                    <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EBH-Tr-D9C">
+                                        <rect key="frame" x="0.0" y="36" width="552" height="496"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </webView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="EBH-Tr-D9C" secondAttribute="bottom" id="fal-5f-MWC"/>
+                                    <constraint firstItem="EBH-Tr-D9C" firstAttribute="top" secondItem="7mu-D2-Lyk" secondAttribute="top" constant="36" id="tcQ-54-FGU"/>
+                                    <constraint firstAttribute="trailing" secondItem="EBH-Tr-D9C" secondAttribute="trailing" id="xOr-FO-KYK"/>
+                                    <constraint firstItem="EBH-Tr-D9C" firstAttribute="leading" secondItem="7mu-D2-Lyk" secondAttribute="leading" id="zMM-HY-Gkl"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7mu-D2-Lyk" firstAttribute="leading" secondItem="dMU-z7-TCo" secondAttribute="leading" constant="24" id="5gU-Ww-2D8"/>
+                            <constraint firstAttribute="trailing" secondItem="7mu-D2-Lyk" secondAttribute="trailing" constant="24" id="k2l-jn-9pR"/>
+                            <constraint firstItem="Ij8-lx-F3c" firstAttribute="top" secondItem="7mu-D2-Lyk" secondAttribute="bottom" constant="24" id="lE3-y0-m8E"/>
+                            <constraint firstItem="7mu-D2-Lyk" firstAttribute="top" secondItem="UwN-9N-ZAl" secondAttribute="bottom" constant="24" id="r5H-e1-S4X"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="MainView" destination="7mu-D2-Lyk" id="mtQ-on-ViK"/>
+                        <outlet property="web" destination="EBH-Tr-D9C" id="bdR-i2-6mr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xiM-1f-gpj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1802" y="429"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="OXZ-LV-Wry">

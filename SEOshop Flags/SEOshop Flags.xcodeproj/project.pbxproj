@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		543EF36A1BB3122C001E8A00 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543EF3691BB3122C001E8A00 /* WebViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		546FBECC1BB0367300717AC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546FBECB1BB0367300717AC4 /* AppDelegate.swift */; };
 		546FBECE1BB0367300717AC4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546FBECD1BB0367300717AC4 /* ViewController.swift */; };
 		546FBED11BB0367300717AC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 546FBECF1BB0367300717AC4 /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		543EF3691BB3122C001E8A00 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		546FBEC81BB0367300717AC4 /* SEOshop Flags.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SEOshop Flags.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		546FBECB1BB0367300717AC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		546FBECD1BB0367300717AC4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				546FBEFB1BB05CDC00717AC4 /* Data.swift */,
 				546FBECD1BB0367300717AC4 /* ViewController.swift */,
 				546FBECF1BB0367300717AC4 /* Main.storyboard */,
+				543EF3691BB3122C001E8A00 /* WebViewController.swift */,
 				546FBEFD1BB05F0000717AC4 /* FlagTableViewCell.swift */,
 				546FBED21BB0367300717AC4 /* Assets.xcassets */,
 				546FBED41BB0367300717AC4 /* LaunchScreen.storyboard */,
@@ -198,6 +201,7 @@
 				TargetAttributes = {
 					546FBEC71BB0367300717AC4 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = WSJXBQB984;
 					};
 					546FBEDB1BB0367300717AC4 = {
 						CreatedOnToolsVersion = 7.0;
@@ -264,6 +268,7 @@
 				546FBECE1BB0367300717AC4 /* ViewController.swift in Sources */,
 				546FBEFC1BB05CDC00717AC4 /* Data.swift in Sources */,
 				546FBECC1BB0367300717AC4 /* AppDelegate.swift in Sources */,
+				543EF36A1BB3122C001E8A00 /* WebViewController.swift in Sources */,
 				546FBEFE1BB05F0000717AC4 /* FlagTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -404,10 +409,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "SEOshop Flags/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.seoshop.SEOshop-Flags";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -415,10 +423,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "SEOshop Flags/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.seoshop.SEOshop-Flags";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -489,6 +500,7 @@
 				546FBEF21BB0367300717AC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		546FBEF31BB0367300717AC4 /* Build configuration list for PBXNativeTarget "SEOshop FlagsTests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +509,7 @@
 				546FBEF51BB0367300717AC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		546FBEF61BB0367300717AC4 /* Build configuration list for PBXNativeTarget "SEOshop FlagsUITests" */ = {
 			isa = XCConfigurationList;
@@ -505,6 +518,7 @@
 				546FBEF81BB0367300717AC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
