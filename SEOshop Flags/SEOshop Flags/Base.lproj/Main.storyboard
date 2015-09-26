@@ -4,6 +4,12 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Lato-Semibold.ttf">
+            <string>Lato-Semibold</string>
+            <string>Lato-Semibold</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--SEOshop Flags-->
         <scene sceneID="tne-QT-ifu">
@@ -33,32 +39,46 @@
                                         <rect key="frame" x="0.0" y="28" width="600" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="grW-nZ-Iqi" id="wbz-uH-Mwp">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="59"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="59.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NL" translatesAutoresizingMaskIntoConstraints="NO" id="dnR-XT-Ck1">
-                                                    <rect key="frame" x="32" y="25" width="16" height="12"/>
+                                                    <rect key="frame" x="32" y="24" width="16" height="12"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="12" id="1ne-Ef-9AK"/>
                                                         <constraint firstAttribute="width" constant="16" id="DDj-sQ-ncY"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name of Country" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="buB-A0-eXE">
-                                                    <rect key="frame" x="66" y="20" width="510" height="22"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="22" id="t4B-q4-5GB"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
-                                                    <color key="textColor" red="0.28627450980392155" green="0.29803921568627451" blue="0.29803921568627451" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="6" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RGt-4e-JOu">
+                                                    <rect key="frame" x="65" y="19" width="511" height="22"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name of Country" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="buB-A0-eXE">
+                                                            <rect key="frame" x="0.0" y="0.0" width="106.5" height="22"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="22" id="t4B-q4-5GB"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="Lato-Semibold" family="Lato" pointSize="14"/>
+                                                            <color key="textColor" red="0.28627450980392155" green="0.29803921568627451" blue="0.29803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="NL" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CgP-Vg-RaU">
+                                                            <rect key="frame" x="112.5" y="0.0" width="398.5" height="22"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="22" id="wlL-cO-YOb"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="Lato-Semibold" family="Lato" pointSize="12"/>
+                                                            <color key="textColor" red="0.6705882352941176" green="0.70196078431372544" blue="0.70196078431372544" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="RGt-4e-JOu" firstAttribute="leading" secondItem="dnR-XT-Ck1" secondAttribute="trailing" constant="17" id="4L8-Ee-gkF"/>
                                                 <constraint firstItem="dnR-XT-Ck1" firstAttribute="centerY" secondItem="wbz-uH-Mwp" secondAttribute="centerY" id="9cl-Te-dZY"/>
-                                                <constraint firstItem="buB-A0-eXE" firstAttribute="leading" secondItem="dnR-XT-Ck1" secondAttribute="trailing" constant="18" id="QAu-YA-hHB"/>
-                                                <constraint firstItem="buB-A0-eXE" firstAttribute="centerY" secondItem="wbz-uH-Mwp" secondAttribute="centerY" id="VyJ-rf-gdF"/>
+                                                <constraint firstItem="RGt-4e-JOu" firstAttribute="centerY" secondItem="wbz-uH-Mwp" secondAttribute="centerY" id="EzE-Wb-PoB"/>
                                                 <constraint firstItem="dnR-XT-Ck1" firstAttribute="top" secondItem="wbz-uH-Mwp" secondAttribute="top" constant="24" id="XDw-xT-u7k"/>
-                                                <constraint firstAttribute="trailing" secondItem="buB-A0-eXE" secondAttribute="trailing" constant="24" id="bdR-Kb-3ot"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="RGt-4e-JOu" secondAttribute="trailing" constant="16" id="hgv-Ul-btV"/>
                                                 <constraint firstItem="dnR-XT-Ck1" firstAttribute="leading" secondItem="wbz-uH-Mwp" secondAttribute="leadingMargin" constant="24" id="obn-nY-SDC"/>
                                                 <constraint firstAttribute="bottom" secondItem="dnR-XT-Ck1" secondAttribute="bottom" constant="24" id="y8v-Dr-msO"/>
                                             </constraints>
@@ -66,8 +86,10 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <inset key="separatorInset" minX="32" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <connections>
+                                            <outlet property="countryCode" destination="CgP-Vg-RaU" id="rfW-M7-XnM"/>
                                             <outlet property="countryImage" destination="dnR-XT-Ck1" id="Sj7-9Y-fsy"/>
                                             <outlet property="countryName" destination="buB-A0-eXE" id="PBA-Lp-45Z"/>
+                                            <segue destination="x0M-8b-reb" kind="presentation" identifier="showFlag" id="Bfj-bC-YnR"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -84,15 +106,7 @@
                             <constraint firstItem="luG-Mw-ysH" firstAttribute="top" secondItem="7iZ-3B-54T" secondAttribute="bottom" id="iue-59-BoT"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="SEOshop Flags" id="C57-9I-UnE">
-                        <barButtonItem key="rightBarButtonItem" title="Test" id="jBq-i3-cYy">
-                            <connections>
-                                <segue destination="CPJ-sq-sEH" kind="popoverPresentation" popoverAnchorBarButtonItem="jBq-i3-cYy" id="Zbi-gY-COw">
-                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                </segue>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="SEOshop Flags" id="C57-9I-UnE"/>
                     <connections>
                         <outlet property="searchDisplayController" destination="nhI-2M-IbR" id="9xR-cO-J0L"/>
                         <outlet property="tableView" destination="luG-Mw-ysH" id="sPh-8L-trV"/>
@@ -120,50 +134,22 @@
             <point key="canvasLocation" x="1117" y="429"/>
         </scene>
         <!--Web View Controller-->
-        <scene sceneID="utu-2M-r71">
+        <scene sceneID="DyO-fz-Qxh">
             <objects>
-                <viewController id="CPJ-sq-sEH" customClass="WebViewController" customModule="SEOshop_Flags" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="x0M-8b-reb" customClass="WebViewController" customModule="SEOshop_Flags" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="UwN-9N-ZAl"/>
-                        <viewControllerLayoutGuide type="bottom" id="Ij8-lx-F3c"/>
+                        <viewControllerLayoutGuide type="top" id="PVz-AG-Ef1"/>
+                        <viewControllerLayoutGuide type="bottom" id="jGn-hJ-hvv"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="dMU-z7-TCo">
+                    <view key="view" contentMode="scaleToFill" id="vl5-AL-hdt">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7mu-D2-Lyk">
-                                <rect key="frame" x="24" y="44" width="552" height="532"/>
-                                <subviews>
-                                    <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EBH-Tr-D9C">
-                                        <rect key="frame" x="0.0" y="36" width="552" height="496"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </webView>
-                                </subviews>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="EBH-Tr-D9C" secondAttribute="bottom" id="fal-5f-MWC"/>
-                                    <constraint firstItem="EBH-Tr-D9C" firstAttribute="top" secondItem="7mu-D2-Lyk" secondAttribute="top" constant="36" id="tcQ-54-FGU"/>
-                                    <constraint firstAttribute="trailing" secondItem="EBH-Tr-D9C" secondAttribute="trailing" id="xOr-FO-KYK"/>
-                                    <constraint firstItem="EBH-Tr-D9C" firstAttribute="leading" secondItem="7mu-D2-Lyk" secondAttribute="leading" id="zMM-HY-Gkl"/>
-                                </constraints>
-                            </view>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="7mu-D2-Lyk" firstAttribute="leading" secondItem="dMU-z7-TCo" secondAttribute="leading" constant="24" id="5gU-Ww-2D8"/>
-                            <constraint firstAttribute="trailing" secondItem="7mu-D2-Lyk" secondAttribute="trailing" constant="24" id="k2l-jn-9pR"/>
-                            <constraint firstItem="Ij8-lx-F3c" firstAttribute="top" secondItem="7mu-D2-Lyk" secondAttribute="bottom" constant="24" id="lE3-y0-m8E"/>
-                            <constraint firstItem="7mu-D2-Lyk" firstAttribute="top" secondItem="UwN-9N-ZAl" secondAttribute="bottom" constant="24" id="r5H-e1-S4X"/>
-                        </constraints>
                     </view>
-                    <connections>
-                        <outlet property="MainView" destination="7mu-D2-Lyk" id="mtQ-on-ViK"/>
-                        <outlet property="web" destination="EBH-Tr-D9C" id="bdR-i2-6mr"/>
-                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xiM-1f-gpj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dWp-PP-W1c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1802" y="429"/>
+            <point key="canvasLocation" x="1897" y="450"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="OXZ-LV-Wry">
@@ -176,6 +162,7 @@
                         <color key="backgroundColor" red="0.16470588235294117" green="0.80392156862745101" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Lato-Semibold" family="Lato" pointSize="20"/>
                             <color key="textColor" red="0.28627450980392155" green="0.29803921568627451" blue="0.29803921568627451" alpha="1" colorSpace="calibratedRGB"/>
                         </textAttributes>
                     </navigationBar>

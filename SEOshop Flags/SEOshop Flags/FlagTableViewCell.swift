@@ -10,6 +10,8 @@ import UIKit
 
 class FlagTableViewCell: UITableViewCell {
 
+    @IBOutlet var countryCode: UILabel!
+    
     @IBOutlet var countryImage: UIImageView!
     @IBOutlet var countryName: UILabel!
     override func awakeFromNib() {

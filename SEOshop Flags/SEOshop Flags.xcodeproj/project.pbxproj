@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5421CBF31BB6BCA5006B492B /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5421CBF01BB6BCA3006B492B /* Lato-Light.ttf */; settings = {ASSET_TAGS = (); }; };
+		5421CBF41BB6BCA5006B492B /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5421CBF11BB6BCA3006B492B /* Lato-Regular.ttf */; settings = {ASSET_TAGS = (); }; };
+		5421CBF51BB6BCA5006B492B /* Lato-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5421CBF21BB6BCA3006B492B /* Lato-Semibold.ttf */; settings = {ASSET_TAGS = (); }; };
 		543EF36A1BB3122C001E8A00 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543EF3691BB3122C001E8A00 /* WebViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		546FBECC1BB0367300717AC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546FBECB1BB0367300717AC4 /* AppDelegate.swift */; };
 		546FBECE1BB0367300717AC4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546FBECD1BB0367300717AC4 /* ViewController.swift */; };
@@ -37,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5421CBF01BB6BCA3006B492B /* Lato-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Light.ttf"; sourceTree = "<group>"; };
+		5421CBF11BB6BCA3006B492B /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
+		5421CBF21BB6BCA3006B492B /* Lato-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Semibold.ttf"; sourceTree = "<group>"; };
 		543EF3691BB3122C001E8A00 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		546FBEC81BB0367300717AC4 /* SEOshop Flags.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SEOshop Flags.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		546FBECB1BB0367300717AC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +112,9 @@
 				546FBECB1BB0367300717AC4 /* AppDelegate.swift */,
 				546FBEFB1BB05CDC00717AC4 /* Data.swift */,
 				546FBECD1BB0367300717AC4 /* ViewController.swift */,
+				5421CBF01BB6BCA3006B492B /* Lato-Light.ttf */,
+				5421CBF11BB6BCA3006B492B /* Lato-Regular.ttf */,
+				5421CBF21BB6BCA3006B492B /* Lato-Semibold.ttf */,
 				546FBECF1BB0367300717AC4 /* Main.storyboard */,
 				543EF3691BB3122C001E8A00 /* WebViewController.swift */,
 				546FBEFD1BB05F0000717AC4 /* FlagTableViewCell.swift */,
@@ -240,7 +249,10 @@
 			files = (
 				546FBED61BB0367300717AC4 /* LaunchScreen.storyboard in Resources */,
 				546FBED31BB0367300717AC4 /* Assets.xcassets in Resources */,
+				5421CBF41BB6BCA5006B492B /* Lato-Regular.ttf in Resources */,
 				546FBED11BB0367300717AC4 /* Main.storyboard in Resources */,
+				5421CBF31BB6BCA5006B492B /* Lato-Light.ttf in Resources */,
+				5421CBF51BB6BCA5006B492B /* Lato-Semibold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

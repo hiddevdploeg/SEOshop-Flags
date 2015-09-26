@@ -20,10 +20,8 @@ let data: [[String:String]] = [
         "Name": "Åland Islands"
     ],
     [
-        "Code":
-        "AL",
-        "Name":
-        "Albania"
+        "Code": "AL",
+        "Name": "Albania"
     ],
     [
         "Code":
