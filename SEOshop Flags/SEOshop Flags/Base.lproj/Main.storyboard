@@ -23,20 +23,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="7iZ-3B-54T">
-                                <rect key="frame" x="0.0" y="64" width="600" height="44"/>
-                                <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <textInputTraits key="textInputTraits" keyboardAppearance="light" returnKeyType="search"/>
-                                <connections>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="1CH-Cb-m0Z"/>
-                                </connections>
-                            </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="luG-Mw-ysH">
-                                <rect key="frame" x="0.0" y="108" width="600" height="492"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="flagCell" rowHeight="60" id="grW-nZ-Iqi" customClass="FlagTableViewCell" customModule="SEOshop_Flags" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="600" height="60"/>
+                                        <rect key="frame" x="0.0" y="92" width="600" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="grW-nZ-Iqi" id="wbz-uH-Mwp">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="59.5"/>
@@ -53,7 +45,7 @@
                                                     <rect key="frame" x="65" y="19" width="511" height="22"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name of Country" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="buB-A0-eXE">
-                                                            <rect key="frame" x="0.0" y="0.0" width="106.5" height="22"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="107" height="22"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="22" id="t4B-q4-5GB"/>
                                                             </constraints>
@@ -62,7 +54,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="NL" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CgP-Vg-RaU">
-                                                            <rect key="frame" x="112.5" y="0.0" width="398.5" height="22"/>
+                                                            <rect key="frame" x="113" y="0.0" width="399" height="22"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="22" id="wlL-cO-YOb"/>
                                                             </constraints>
@@ -98,38 +90,17 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="luG-Mw-ysH" secondAttribute="bottom" id="FG5-09-hoO"/>
-                            <constraint firstItem="7iZ-3B-54T" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Me1-eD-ptp"/>
-                            <constraint firstAttribute="trailing" secondItem="7iZ-3B-54T" secondAttribute="trailing" id="OJ4-ZU-Teo"/>
                             <constraint firstAttribute="trailing" secondItem="luG-Mw-ysH" secondAttribute="trailing" id="OcD-rl-gMf"/>
                             <constraint firstItem="luG-Mw-ysH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Z2s-vz-gn0"/>
-                            <constraint firstItem="7iZ-3B-54T" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="id1-im-18l"/>
-                            <constraint firstItem="luG-Mw-ysH" firstAttribute="top" secondItem="7iZ-3B-54T" secondAttribute="bottom" id="iue-59-BoT"/>
+                            <constraint firstItem="luG-Mw-ysH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-64" id="o8S-5I-hPT"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="SEOshop Flags" id="C57-9I-UnE"/>
                     <connections>
-                        <outlet property="searchDisplayController" destination="nhI-2M-IbR" id="9xR-cO-J0L"/>
                         <outlet property="tableView" destination="luG-Mw-ysH" id="sPh-8L-trV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <searchDisplayController id="W2b-0c-if8">
-                    <connections>
-                        <outlet property="delegate" destination="BYZ-38-t0r" id="2Zj-QX-gv0"/>
-                        <outlet property="searchContentsController" destination="BYZ-38-t0r" id="7da-lD-uay"/>
-                        <outlet property="searchResultsDataSource" destination="BYZ-38-t0r" id="sEQ-HZ-Ytj"/>
-                        <outlet property="searchResultsDelegate" destination="BYZ-38-t0r" id="W3a-ro-CT2"/>
-                    </connections>
-                </searchDisplayController>
-                <searchDisplayController id="nhI-2M-IbR">
-                    <connections>
-                        <outlet property="delegate" destination="BYZ-38-t0r" id="9pH-Ez-omV"/>
-                        <outlet property="searchBar" destination="7iZ-3B-54T" id="nAF-Cd-Who"/>
-                        <outlet property="searchContentsController" destination="BYZ-38-t0r" id="yYa-05-O5l"/>
-                        <outlet property="searchResultsDataSource" destination="BYZ-38-t0r" id="cbV-XH-XAy"/>
-                        <outlet property="searchResultsDelegate" destination="BYZ-38-t0r" id="2OJ-eg-dCC"/>
-                    </connections>
-                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="1117" y="429"/>
         </scene>

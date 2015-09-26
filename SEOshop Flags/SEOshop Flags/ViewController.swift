@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
+    let alphabet = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
     
     @IBAction func testWeb(sender: AnyObject) {
         
@@ -56,26 +56,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         if (segue.identifier == "showFlag") {
             let vc = segue.destinationViewController as! WebViewController
+            vc.modalPresentationStyle = .Custom
             vc.country = data[(selectedIndex?.row)!]["Name"]!
-           
         }
         
     }
     
-    
-    //    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-//        let cell = tableView.cellForRowAtIndexPath(indexPath)
-//        if (segue.identifier == "showWeb") {
-//            let text = textField.text as String!
-//            let vc = segue.destinationViewController as! WebViewController
-//            vc.country = data[row]["Name"]
-//        }
-//        
-//    }
-//
-//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-//        
-//    }
-
 }
 
